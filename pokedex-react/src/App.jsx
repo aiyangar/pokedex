@@ -1,12 +1,24 @@
-import { useState } from 'react'
+import { Route, BrowserRouter, Routes } from "react-router-dom"
+
+import Home from "./pages/home/home.component"
+import Detail from "./pages/detail/detail.component"
+import Create from "./pages/create/create.component"
+
+import "./App.css"
 
 
 function App() {
 
   return (
-    <>
-      <p>Hello world</p>
-    </>
+    <BrowserRouter>
+      <div>
+        <Routes>
+          <Route exact path="/home" element={<Home />}/>
+          <Route path="/home/:id" element={<Detail />}/>
+          <Route path="/create" element={<Create />}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   )
 }
 
