@@ -5,10 +5,13 @@ import "./home.styles.css";
 
 function Home() {
   return (
-    <div className="home">
-      <h1>Welcome to the Pokédex</h1>
+    <div>
       <Navbar />
-      <CardsContainer />
+      <div className="home">
+        <h1>Welcome to the Pokédex</h1>
+        
+        <CardsContainer />
+      </div>
     </div>
   );
 }

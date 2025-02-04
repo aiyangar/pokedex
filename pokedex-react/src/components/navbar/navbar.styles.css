@@ -1,0 +1,24 @@
+.nav-wrapper {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    border: solid 2px #f9f9f9;
+    top: 0;
+}
+
+.brand-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+}
